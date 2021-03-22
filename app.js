@@ -14,7 +14,7 @@ const h3 = document.querySelector(`h3`);
 
 h3.addEventListener(`mouseover`, () => {
     alert(`OH NO! The squirrels are on to you. Now you have to leave this reality and move to a new one`);
-  });
+});
 
 
 //   BONUS
@@ -25,15 +25,19 @@ const form = document.querySelector(`form`);
 
 // 3b. Using addEventListener, display the value in the text input with an alert when the submit input in the form is pressed.
 
+const quote = `Z`
 
 form.addEventListener(`submit`, () => {
-    const quoteAlert = userForm.elements.quote.value;
-  alert(${quoteAlert});
+    // p.preventDefault();
+    quote = userForm.elements.quote.value;
+    // const username = userForm.elements.username.value;
+    //   alert(quote);
+    alert(quote);
 });
 
 // 4a. Select the Dark Mode button and set it to a const variable called darkMode
 
-
+const darkMode = document.querySelector(`#dm`);
 
 // 4b. Using addEventListener, TOGGLE the "dark-mode" CSS class On/Off for EVERY element when the Dark Mode Button is clicked (HINT: You will need to use the asterisk "*" selector as well as a loop)
 
